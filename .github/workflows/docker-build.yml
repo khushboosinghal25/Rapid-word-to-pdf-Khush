@@ -19,15 +19,15 @@ jobs:
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
       with:
-        username: ${{ secrets.khushboosinghal25 }}
-        password: ${{ secrets.Khush@2509 }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
     # Build the Docker image
     - name: Build Docker Image
       run: |
-        docker build -t khushboosinghal25/rapidfortkhushboo:latest .
+        docker build -t DOCKER_USERNAME/rapidfortkhushboo:latest .
 
     # Push the Docker image to Docker Hub
     - name: Push Docker Image
       run: |
-        docker push khushboosinghal25/rapidfortkhushboo:latest
+        docker push DOCKER_USERNAME/rapidfortkhushboo:latest
