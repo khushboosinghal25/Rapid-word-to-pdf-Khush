@@ -11,9 +11,9 @@ Run with `docker run -p 8080:8080 khushboosinghal25/rapidfortkhushboo:latest
 
 ## Running the server locally
 
-* Build with `docker build . -t pdf`
-* Start with `docker run -p 8080:8080 pdf`
-* Open in your browser at `http://localhost:8080/?url=http://homepages.inf.ed.ac.uk/neilb/TestWordDoc.doc`
+* Build with `docker build -t khushboosinghal25/rapidfortkhushboo:latest .`
+* Start with `docker run -p 8080:8080 khushboosinghal25/rapidfortkhushboo:latest`
+* Open in your browser at `http://localhost:8080/`
 
 ## Deploy to your server
 https://hub.docker.com/r/khushboosinghal25/rapidfortkhushboo
